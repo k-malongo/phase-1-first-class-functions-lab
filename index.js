@@ -6,15 +6,16 @@ const returnFirstTwoDrivers = function(){
 }
 
 const returnLastTwoDrivers = function(){
-    return (drivers.slice(2,4))
+    return (drivers.slice(-2))
 }
 const selectingDrivers =[returnFirstTwoDrivers, returnLastTwoDrivers]
 
 const createFareMultiplier = function(num){
-    return function(quad){
-        return num*quad
+     function mul(quad){
+        let q= num*quad
+        return q
     }
-
+    return mul
 }
 const fareDoubler= function(fare){
     return fare*2
